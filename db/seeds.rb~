@@ -12,7 +12,7 @@ Book.create!([{
   title: "Jony Ive: The Genius Behind Apple's Greatest Products",
   author: "Leander Kahney",
   description: "Even though I respect Ive, I felt this biography only hit skin deep. It went over all the major events in his life, his passion for design, awards he achieved -- but that's really it. I dont't feel I know him anymore than before reading this.",
-  amazon_id: "159184617X",
+  amazon_id: "159184617X"
   rating: 4,
   finished_on: 1.days.ago
 },
