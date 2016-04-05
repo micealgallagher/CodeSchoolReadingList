@@ -10,4 +10,9 @@ class Book < ActiveRecord::Base
 	def finished?
 		finished_on.present?
 	end
+
+	protected
+		def set_keywords
+		end
+
 end
