@@ -6,6 +6,7 @@ class Book < ActiveRecord::Base
 	scope :finished, -> { where.not(finished_on: nil) }
 	scope :recent,   -> { where('finished_on > ?', 2.days.ago) }
 	scope :search,   -> (keyword) { where('keywords LIKE ?', "%#{keyword.downcase}%") if keyword.present }
+	scope :filter, 	 -> (book_genre) { joins(:genre).where('genres.name = ?', genre_name) if name.present}
 
 	def finished?
 		finished_on.present?
